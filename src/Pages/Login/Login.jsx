@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
 
-    const handleLogin = event =>{
+    const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        const login = {email, password};
+        const login = { email, password };
         console.log(login);
     }
     return (
@@ -19,6 +20,7 @@ const Login = () => {
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleLogin}>
                         <div className="card-body">
+                        <h2 className="text-3xl text-center font-mono">Login </h2>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -38,8 +40,9 @@ const Login = () => {
                                 <button className="btn btn-primary">Login</button>
                             </div>
                         </div>
+                        <p className="text-center py-4">New toys creator please: <Link className="font-bold text-rose-600" to="/signup">Sign Up</Link></p>
                     </form>
-                    <p></p>
+
                 </div>
             </div>
         </div>

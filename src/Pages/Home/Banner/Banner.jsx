@@ -9,10 +9,10 @@ const Banner = () => {
                     <h1 className="mb-7 text-6xl font-bold text-[#ef7b84]">
                         <span className="text-3xl text-stone-200 font-extralight">THE ESSENTIALS</span>
                         <br />
-                        <span className=" hover:animate-pulse">Baby Sports Toys</span></h1>
+                        <span className=" hover:animate-pulse hover:bg-opacity-80">Baby Sports Toys</span></h1>
                     <p className="mb-7 text-stone-200">Check out - and check off - our list of
                         must - haves for the new arrival</p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <button className="btn text-white btn-outline hover:bg-[#e98e8e] hover:border-none">Get Started</button>
                 </div>
             </div>
         </div>

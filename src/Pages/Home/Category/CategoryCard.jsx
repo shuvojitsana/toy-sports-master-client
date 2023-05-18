@@ -3,7 +3,7 @@
 
 
 
-const CategoryCard = ({category}) => {
+const CategoryCard = () => {
     return (
         <div>
             
