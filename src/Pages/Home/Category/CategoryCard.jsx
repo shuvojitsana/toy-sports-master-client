@@ -1,6 +1,9 @@
 
 
-const CategoryCard = () => {
+
+
+
+const CategoryCard = ({category}) => {
     return (
         <div>
             
