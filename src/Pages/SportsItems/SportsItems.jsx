@@ -6,7 +6,7 @@ const SportsItems = () => {
     const [sports, setSports] = useState([])
 
     useEffect(() => {
-        fetch('Category.json')
+        fetch('http://localhost:5000/toys')
             .then(res => res.json())
             .then(data => setSports(data))
     }, [])
@@ -16,7 +16,7 @@ const SportsItems = () => {
             <p className="mt-5">If you’re looking for a toy shop then look no further. <br />
                 Go on, trat the kids with out huge selection of online toys shops.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                 {
                     sports.map(sport => <Sport
                         key={sport._id}

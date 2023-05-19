@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
 
 
 const Sport = ({ sport }) => {
-    const { title, picture, balance, about, rating } = sport;
+    const { title, picture, _id} = sport;
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 shadow-xl my-6">
             <figure><img className="w-[400px] rounded" src={picture} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Views more</button>
+                    <Link to={`${_id}`}>
+                    <button className="btn btn-outline text-white   bg-[#e98e8e] hover:bg-[#e98e8e]  hover:border-none hover:animate-pulse">View more</button>
+                    </Link>
                 </div>
             </div>
         </div>

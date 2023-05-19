@@ -23,7 +23,7 @@ const Header = () => {
             <li><Link className="hover:text-[#e98e8e]" to="/login">Login</Link></li>
         }
         <li><Link className="hover:text-[#e98e8e]" to="/blogs">Blogs</Link></li>
-        <li><Link className="hover:text-[#e98e8e]" to="/sportsItems">All Toys</Link></li>
+        <li><Link className="hover:text-[#e98e8e]" to="/checkout">All Toys</Link></li>
     </>
     return (
         <div className="navbar bg-base-300">
