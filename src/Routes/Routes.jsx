@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ErrorPages from "../Pages/ErrorPages/ErrorPages";
+import SportsItems from "../Pages/SportsItems/SportsItems";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
                 path:"/blogs",
                 
             },
+            
             {
                 path:"/login",
                 element:<Login></Login>
@@ -26,7 +28,11 @@ const router = createBrowserRouter([
             {
                 path:"/signup",
                 element:<Register></Register>
-            }
+            },
+            {
+                path:"/sportsItems",
+                element:<SportsItems></SportsItems>
+            },
         ]
     },
 ]);

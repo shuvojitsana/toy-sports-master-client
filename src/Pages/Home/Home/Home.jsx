@@ -1,3 +1,4 @@
+
 import SportsItems from "../../SportsItems/SportsItems";
 import Banner from "../Banner/Banner";
 import Carocale from "../Carocale/Carocale";
@@ -14,6 +15,7 @@ const Home = () => {
             <Category></Category>
             <Carocale></Carocale>
             <SportsItems></SportsItems>
+            
         </div>
     );
 };

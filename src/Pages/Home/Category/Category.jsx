@@ -106,7 +106,7 @@ const Category = () => {
                     </TabPanel>
                     <TabPanel>
                         <h2>Any content 3</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-5">
+                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-5">
                             <div className="card card-side bg-base-100 shadow-xl">
                                 <figure><img src={bat} alt="Movie" /></figure>
                                 <div className="card-body">
