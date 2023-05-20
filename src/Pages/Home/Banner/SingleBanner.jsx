@@ -2,13 +2,17 @@
 
 const SingleBanner = () => {
     return (
-        <div className="hero min-h-[560px]" style={{ backgroundImage: `url("https://img.freepik.com/free-vector/soccer-volleyball-baseball-rugby-equipment_1441-4026.jpg?w=996&t=st=1684503178~exp=1684503778~hmac=f84054431a88c1da16cd6d06341a72a3436522723c65622554282f2d30b2df82")` }}>
+        <div className="hero min-h-[300px]" style={{ backgroundImage: `url("https://www.babiesrus.ca/dw/image/v2/BDFX_PRD/on/demandware.static/-/Sites-toys-master-catalog/default/dwe98ff8a0/images/9E946E70_5.jpg?sw=767&sh=767&sm=fit")` }}>
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
-                <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn btn-primary">Get Started</button>
+                <div className="">
+                    <h1 className="mb-7 text-6xl font-bold text-[#ef7b84]">
+                        <span className="text-3xl text-stone-200 font-extralight">THE ESSENTIALS</span>
+                        <br />
+                        <span className=" hover:animate-pulse hover:bg-opacity-80">Baby Sports Toys</span></h1>
+                    <p className="mb-7 text-stone-200">Check out - and check off - our list of
+                        must - haves for the new arrival</p>
+                    <button className="btn text-white btn-outline hover:bg-[#e98e8e] hover:border-none">Get Started</button>
                 </div>
             </div>
         </div>

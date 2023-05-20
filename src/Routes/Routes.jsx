@@ -6,6 +6,9 @@ import Register from "../Pages/Register/Register";
 import ErrorPages from "../Pages/ErrorPages/ErrorPages";
 import SportsItems from "../Pages/SportsItems/SportsItems";
 import Checkout from "../Pages/Checkout/Checkout";
+import SportsToysAd from "../Layout/SportsToysAd/SportsToysAd";
+import BookingToy from "../Pages/BookingToy/BookingToy";
+import PrivetRoutes from "./PrivetRoutes";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +38,15 @@ const router = createBrowserRouter([
                 element:<SportsItems></SportsItems>,
              
                 
+            },
+            {
+                path:"/addToys",
+                element:<SportsToysAd></SportsToysAd>,
+                loader:() => fetch("http://localhost:5000/toys")
+            },
+            {
+                path:"/bookingToy",
+                element:<PrivetRoutes><BookingToy></BookingToy></PrivetRoutes>
             },
             {
                 path:"/checkout/:id",

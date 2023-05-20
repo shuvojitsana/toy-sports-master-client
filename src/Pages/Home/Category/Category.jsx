@@ -1,30 +1,22 @@
-import { useEffect, useState } from "react";
+
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import 'react-tabs/style/react-tabs.css';
 import bat from "../../../assets/bat1.png"
-import CategoryCard from "./CategoryCard";
+
 
 
 const Category = () => {
 
-    const [categories, setCategories] = useState([]);
+    // const [categories, setCategories] = useState([]);
 
-    useEffect(() => {
-        fetch('Category.json')
-            .then(res => res.json())
-            .then(data => setCategories(data))
-    }, [])
+    // useEffect(() => {
+    //     fetch('Category.json')
+    //         .then(res => res.json())
+    //         .then(data => setCategories(data))
+    // }, [])
     return (
         <div className="mt-7">
-            <h2 className="text-center">Our Products {categories.length}</h2>
-            {
-                categories.map(category => <CategoryCard
-                    key={category._id}
-                    category={category}
-                >
-                    
-                </CategoryCard>)
-            }
+            
             <div>
                 <Tabs>
                     <TabList>

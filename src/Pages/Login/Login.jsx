@@ -4,7 +4,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Login = () => {
-    const { signIn, handleGoogleSignIn, user } = useContext(AuthContext)
+    const { signIn, handleGoogleSignIn, } = useContext(AuthContext)
     const [error, setError] = useState('');
 
     const handleLogin = event => {
@@ -64,9 +64,7 @@ const Login = () => {
                     <p className="text-center py-4">New toys creator please: <Link className="font-bold text-rose-600" to="/signup">Sign Up</Link></p>
                     <br />
                     <button onClick={handleGoogleSignIn}>Google sign in</button>
-                    {user && <div>
-                        <h4>user: {user.displayName}</h4>
-                    </div>}
+                    
                 </div>
             </div>
         </div>

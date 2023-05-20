@@ -2,7 +2,7 @@
 
 const Banner = () => {
     return (
-        <div className="hero  min-h-screen" style={{ backgroundImage: `url('https://businesslug.com/wp-content/uploads/2022/05/different_sports-780x438.jpeg')` }}>
+        <div className="hero  min-h-[450px]" style={{ backgroundImage: `url('https://businesslug.com/wp-content/uploads/2022/05/different_sports-780x438.jpeg')` }}>
             <div className="hero-overlay bg-opacity-30"></div>
             <div className=" text-neutral-content">
                 <div className="">

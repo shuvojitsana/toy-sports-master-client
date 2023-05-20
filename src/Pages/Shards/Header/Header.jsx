@@ -5,24 +5,26 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 
 
 const Header = () => {
-    const {logOut , user} = useContext(AuthContext);
+    const { logOut, user } = useContext(AuthContext);
 
-    const handleLogOut = () =>{
-        logOut() 
-        .then(() =>{})
-        .catch(error =>console.log(error))
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error))
     }
 
     const navItem = <>
         <li><Link className="hover:text-[#e98e8e]" to="/">Home</Link></li>
-        { user? 
+        {user ?
             <>
-                <li><Link to="/" className="hover:text-[#e98e8e]">Add A Toys</Link></li>
+                <li><Link to="/bookingToy" className="hover:text-[#e98e8e]">My Toys</Link></li>
                 <li><Link onClick={handleLogOut} className="hover:text-[#e98e8e]">Logout</Link></li>
+
             </> :
             <li><Link className="hover:text-[#e98e8e]" to="/login">Login</Link></li>
         }
         <li><Link className="hover:text-[#e98e8e]" to="/blogs">Blogs</Link></li>
+        <li><Link to="/addToys" className="hover:text-[#e98e8e]">Add A Toys</Link></li>
         <li><Link className="hover:text-[#e98e8e]" to="/checkout">All Toys</Link></li>
     </>
     return (
@@ -37,8 +39,8 @@ const Header = () => {
                     </ul>
                 </div>
                 <Link to="/" className=" font-mono  normal-case text-xl">
-                {/* <img className="h-[50px] w-[50px] rounded-full" src={logo} alt="" /> */}
-                Sports Master
+                    {/* <img className="h-[50px] w-[50px] rounded-full" src={logo} alt="" /> */}
+                    Sports Master
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -47,7 +49,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-            <Link to="/"><button className="btn btn-outline text-white   bg-[#e98e8e] hover:bg-[#e98e8e] hover:border-none">Gat Started</button></Link>
+                <Link to="/"><button className="btn btn-outline text-white   bg-[#e98e8e] hover:bg-[#e98e8e] hover:border-none">Gat Started</button></Link>
             </div>
         </div>
     );

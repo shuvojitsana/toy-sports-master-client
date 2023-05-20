@@ -1,7 +1,7 @@
 // import { useLoaderData } from "react-router-dom";
 
 import { useLoaderData } from "react-router-dom";
-import SingleBanner from "../Home/Banner/SingleBanner";
+
 
 // import { useEffect } from "react";
 // import { useParams } from "react-router-dom";
@@ -18,7 +18,7 @@ const Checkout = () => {
     
     return (
         <div>
-            <SingleBanner></SingleBanner>
+           
             <h2>Book service: {toys.title}</h2>
         </div>
     );
