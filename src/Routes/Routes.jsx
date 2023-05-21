@@ -9,6 +9,7 @@ import Checkout from "../Pages/Checkout/Checkout";
 import SportsToysAd from "../Layout/SportsToysAd/SportsToysAd";
 import BookingToy from "../Pages/BookingToy/BookingToy";
 import PrivetRoutes from "./PrivetRoutes";
+import Blogs from "../Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
             },
             {
                 path:"/blogs",
-                
+                element:<Blogs></Blogs>
             },
             
             {
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
             },
             {
                 path:"/checkout/:id",
-                element:<Checkout></Checkout>,
+                element:<PrivetRoutes><Checkout></Checkout></PrivetRoutes>,
                 loader:({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
             }
         ]
